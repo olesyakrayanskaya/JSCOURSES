@@ -6,6 +6,45 @@
     <title>JSCOURSES</title>
   </head>
   <body>
+    <div class="modal">
+      <form class="modal__form" action="#" method="post">
+        <h2 class="modal__title">Начать учиться</h2>
+        <button class="modal__close" type="button">
+          <img
+            class="modal__icon"
+            src="./assets/images/close-modal.svg"
+            alt="close"
+          />
+        </button>
+        <p class="modal__subtitle">
+          Оставьте заявку и наш менеджер вам перезвонит.
+        </p>
+        <div class="modal__inner">
+          <label class="modal__label" for="modal-input-name"
+            >Как вас зовут</label
+          >
+          <input
+            class="modal__input input"
+            type="text"
+            name="modal-input"
+            id="modal-input-name"
+            placeholder="Александр"
+          />
+        </div>
+        <input
+          class="modal__input input"
+          type="email"
+          name="modal-input"
+          id="modal-input-email"
+          placeholder="Ваш email"
+        />
+        <button class="modal__btn btn" type="button">Отправить</button>
+        <p class="modal__text">
+          Нажимая кнопку «Отправить», вы соглашаетесь с
+          <a class="modal__link" href="#">политикой конфиденциальности</a>
+        </p>
+      </form>
+    </div>
     <div class="container">
       <header class="header">
         <div class="header__logo logo">
@@ -59,13 +98,17 @@
             <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
           </ul>
         </nav>
-        <button class="header__btn btn" type="button">Начать учиться</button>
+        <button class="header__btn btn" type="button" id="start-study">Начать учиться</button>
         <button class="header__btn header__btn_mobile" type="button">
           <img class="btn__icon" src="./assets/images/menu.svg" alt="menu" />
         </button>
-        <button class="header__btn header__btn_mobile" type="button" id="close-mobile">
-            <img class="btn__icon" src="./assets/images/close.svg" alt="close" />
-          </button>
+        <button
+          class="header__btn header__btn_mobile"
+          type="button"
+          id="close-mobile"
+        >
+          <img class="btn__icon" src="./assets/images/close.svg" alt="close" />
+        </button>
       </header>
       <div class="mobile-menu">
         <nav class="mobile-menu__nav">
@@ -108,7 +151,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu__btn btn" type="button">
+        <button class="mobile-menu__btn btn" type="button" id="start-study-mobile">
           Начать учиться
         </button>
       </div>
