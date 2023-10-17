@@ -20,7 +20,7 @@
   &__item:nth-child(1) {
     margin-left: 0;
   }
-
+  
   &__item:last-child {
     margin-left: 40px;
   }
@@ -62,5 +62,9 @@
 
   &__link:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
