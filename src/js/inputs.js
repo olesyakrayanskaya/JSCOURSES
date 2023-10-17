@@ -58,14 +58,17 @@ inputDate.addEventListener('change', () => {
 let thumb = document.querySelector('.books__thumb');
 let slider = document.querySelector('.books__slider');
 
-thumb.onmousedown = function (event) {
+slider.addEventListener('pointerdown', function (event) {
   event.preventDefault();
-  console.log('ddd')
+});
+
+thumb.addEventListener('pointerdown', function (event) {
+  event.preventDefault();
 
   let shiftX = event.clientX - thumb.getBoundingClientRect().left;
 
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('pointermove', onMouseMove);
+  document.addEventListener('pointerup', onMouseUp);
 
   function onMouseMove(event) {
     let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
@@ -82,11 +85,11 @@ thumb.onmousedown = function (event) {
   }
 
   function onMouseUp() {
-    document.removeEventListener('mouseup', onMouseUp);
-    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('pointerup', onMouseUp);
+    document.removeEventListener('pointermove', onMouseMove);
   }
-};
+});
 
-thumb.ondragstart = function () {
+thumb.addEventListener('dragstart', function () {
   return false;
-};
+});
