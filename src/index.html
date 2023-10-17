@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSCOURSES</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo logo">
+          <a class="logo__link" href="./index.html"
+            ><img class="logo__icon" src="./assets/images/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Статьи</a
+              ><button class="nav__btn">
+                <img
+                  class="nav__icon nav__icon_inactive"
+                  src="./assets/images/select-down.svg"
+                  alt="down"
+                />
+                <img
+                  class="nav__icon nav__icon_active"
+                  src="./assets/images/select-active.svg"
+                  alt="active-select"
+                />
+              </button>
+              <div class="nav__sublist nav__sublist_inactive">
+                <a class="nav__link" href="#">Статья 1</a>
+                <a class="nav__link" href="#">Статья 2</a>
+                <a class="nav__link" href="#">Статья 3</a>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Курсы</a
+              ><button class="nav__btn">
+                <img
+                  class="nav__icon nav__icon_inactive"
+                  src="./assets/images/select-down.svg"
+                  alt="down"
+                />
+                <img
+                  class="nav__icon nav__icon_active"
+                  src="./assets/images/select-active.svg"
+                  alt="active-select"
+                />
+              </button>
+              <div class="nav__sublist nav__sublist_inactive">
+                <a class="nav__link" href="#">JavaScript Pro</a>
+                <a class="nav__link" href="#">JavaScript для новчиков</a>
+                <a class="nav__link" href="#">JavaScript ниндзя</a>
+              </div>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn btn" type="button">Начать учиться</button>
+      </header>
+    </div>
+  </body>
 </html>

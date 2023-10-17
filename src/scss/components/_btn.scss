@@ -1,0 +1,23 @@
+@use '../base/variables';
+
+.btn {
+  display: inline-flex;
+  padding: 10px 20px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: variables.$btn-color;
+  width: 145px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; 
+  flex-shrink: 0;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten(variables.$btn-color, 20%);
+  }
+}
