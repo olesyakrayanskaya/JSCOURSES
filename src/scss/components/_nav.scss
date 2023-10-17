@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
   }
 
   &__item {
@@ -20,7 +21,15 @@
   &__item:nth-child(1) {
     margin-left: 0;
   }
-  
+
+  &__item:nth-child(3) {
+    line-height: 18px;
+  }
+
+  &__item:nth-child(4) {
+    line-height: 18px;
+  }
+
   &__item:last-child {
     margin-left: 40px;
   }
