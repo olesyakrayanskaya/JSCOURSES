@@ -98,7 +98,9 @@
             <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
           </ul>
         </nav>
-        <button class="header__btn btn" type="button" id="start-study">Начать учиться</button>
+        <button class="header__btn btn" type="button" id="start-study">
+          Начать учиться
+        </button>
         <button class="header__btn header__btn_mobile" type="button">
           <img class="btn__icon" src="./assets/images/menu.svg" alt="menu" />
         </button>
@@ -151,10 +153,49 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu__btn btn" type="button" id="start-study-mobile">
+        <button
+          class="mobile-menu__btn btn"
+          type="button"
+          id="start-study-mobile"
+        >
           Начать учиться
         </button>
       </div>
+      <section class="books">
+        <h1 class="books__title">Путь JavaScript</h1>
+        <label class="books__label books__label_date" for="date-books">
+          <span class="books__date">12</span>
+          <span class="books__month">Апреля</span>
+          <img
+            class="books__icon"
+            src="./assets/images/triangle.svg"
+            alt="arrow"
+          />
+        </label>
+        <input
+          class="books__date"
+          type="date"
+          name="date-books"
+          id="date-books"
+        />
+        <picture class="books__picture">
+          <source
+            srcset="./assets/images/books-mobile.png"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="books__img"
+            src="./assets/images/books-desktop.png"
+            alt="books"
+          />
+        </picture>
+        <div class="books__slider">
+            <div class="books__thumb"></div>
+        </div>
+        <p class="books__text">
+          Можно выделить три основных направления для прогресса JavaScript
+        </p>
+      </section>
     </div>
   </body>
 </html>
