@@ -21,6 +21,19 @@
     }
   }
 
+  &__picture {
+    width: 738px;
+    height: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+
+       @media (max-width: 767px) {
+        width: 300px;
+      }
+  }
+
   &__label_date {
     position: absolute;
     top: 106px;
@@ -104,7 +117,7 @@
   &__slider {
     width: 100%;
     position: absolute;
-    bottom: 38px;
+    bottom: 115px;
     cursor: pointer;
 
     @media (max-width: 767px) {
