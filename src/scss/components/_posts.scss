@@ -58,8 +58,10 @@
   &__img {
     width: 226px;
     height: 226px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     border-radius: 18px;
     margin-bottom: 12px;
 

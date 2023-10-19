@@ -140,6 +140,22 @@
     margin-left: 0;
   }
 
+  &__input:nth-of-type(1)::-webkit-input-placeholder {
+    color: variables.$font;
+  }
+
+  &__input:nth-of-type(1)::-moz-placeholder {
+    color: variables.$font;
+  }
+
+  &__input:nth-of-type(1):-ms-input-placeholder {
+    color: variables.$font;
+  }
+
+  &__input:nth-of-type(1)::-ms-input-placeholder {
+    color: variables.$font;
+  }
+
   &__input:nth-of-type(1)::placeholder {
     color: variables.$font;
   }
@@ -201,6 +217,34 @@
       width: 280px;
       min-height: 200px;
     }
+  }
+
+  &__text::-webkit-input-placeholder {
+    color: variables.$placeholder-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  &__text::-moz-placeholder {
+    color: variables.$placeholder-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  &__text:-ms-input-placeholder {
+    color: variables.$placeholder-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  &__text::-ms-input-placeholder {
+    color: variables.$placeholder-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
   }
 
   &__text::placeholder {
