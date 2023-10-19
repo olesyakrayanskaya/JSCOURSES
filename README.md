@@ -1,6 +1,6 @@
 # JSCOURSES
 
-Опубликованo на: []()
+Опубликованo на: [https://olesyakrayanskaya.github.io/JSCOURSES/](https://olesyakrayanskaya.github.io/JSCOURSES/)
 
 Запустить проект:
 
