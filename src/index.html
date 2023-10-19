@@ -434,9 +434,72 @@
               <li class="review__option">Выразительный JavaScript</li>
             </ul>
           </div>
-          <button class="review__btn btn" type="submit" id="send-review">Отправить</button>
+          <button class="review__btn btn" type="submit" id="send-review">
+            Отправить
+          </button>
         </div>
       </div>
     </form>
+    <section class="posts">
+      <div class="container">
+        <h2 class="posts__title">Похожие посты</h2>
+        <div class="posts__container">
+          <div class="posts__item" id="post-1">
+            <picture class="posts__picture">
+              <source
+                srcset="./assets/images/react-mobile.png"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="posts__img"
+                src="./assets/images/react.png"
+                alt="img"
+              />
+            </picture>
+            <p class="posts__date">12 декабря</p>
+            <h3 class="posts__name">
+              <a class="posts__link" href="#"
+                >События жизненного цикла ReactJS</a
+              >
+            </h3>
+          </div>
+          <div class="posts__item" id="post-2">
+            <picture class="posts__picture">
+              <source
+                srcset="./assets/images/react-mobile.png"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="posts__img"
+                src="./assets/images/boxes.png"
+                alt="img"
+              />
+            </picture>
+            <p class="posts__date">10 декабря</p>
+            <h3 class="posts__name">
+              <a class="posts__link" href="#">CSS Grids. Полное руководство</a>
+            </h3>
+          </div>
+          <div class="posts__item" id="post-3">
+            <picture class="posts__picture">
+              <source
+                srcset="./assets/images/react-mobile.png"
+                media="(max-width: 767px)"
+              />
+              <img class="posts__img" src="./assets/images/js.png" alt="img" />
+            </picture>
+            <p class="posts__date">5 декабря</p>
+            <h3 class="posts__name">
+              <a class="posts__link" href="#">Асинхронность в JavaScript</a>
+            </h3>
+          </div>
+        </div>
+        <div class="posts__buttons">
+          <button class="posts__btn posts__btn_active" id="1"></button>
+          <button class="posts__btn" id="2"></button>
+          <button class="posts__btn" id="3"></button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
