@@ -60,7 +60,7 @@
         </div>
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item nav__item_btn">
               <a class="nav__link" href="#">Статьи</a
               ><button class="nav__btn">
                 <img
@@ -80,7 +80,7 @@
                 <a class="nav__link" href="#">Статья 3</a>
               </div>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item_btn">
               <a class="nav__link" href="#">Курсы</a
               ><button class="nav__btn">
                 <img
@@ -207,7 +207,7 @@
         </p>
       </section>
       <section class="server-js">
-        <h2 class="server-js__title">Серверный JavaScript</h2>
+        <h3 class="server-js__title">Серверный JavaScript</h3>
         <blockquote class="server-js__quote">
           <img
             class="server-js__icon"
@@ -251,7 +251,7 @@
     </div>
     <section class="conclusion">
       <div class="container">
-        <h2 class="conclusion__title">Заключение</h2>
+        <h3 class="conclusion__title">Заключение</h3>
         <p class="conclusion__text">
           Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое
           устройство диссонирует лирический субъект. Абстрактное высказывание
@@ -262,5 +262,181 @@
         </p>
       </div>
     </section>
+    <form class="review" action="#" method="post">
+      <div class="container">
+        <h2 class="review__title">Что вы думаете об этой книге?</h2>
+        <h4 class="review__subtitle">Оцените статью</h4>
+        <div class="review__rating">
+          <span class="review__num"></span>
+          <div class="review__stars">
+            <label class="review__label" for="star-5">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                  fill="#D7D7E2"
+                />
+              </svg>
+              <input
+                class="review__radio"
+                name="star"
+                id="star-5"
+                value="5"
+                type="radio"
+              />
+            </label>
+            <label class="review__label" for="star-4">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                  fill="#D7D7E2"
+                />
+              </svg>
+              <input
+                class="review__radio"
+                name="star"
+                id="star-4"
+                value="4"
+                type="radio"
+                checked
+              />
+            </label>
+            <label class="review__label" for="star-3">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                  fill="#D7D7E2"
+                />
+              </svg>
+              <input
+                class="review__radio"
+                name="star"
+                id="star-3"
+                value="3"
+                type="radio"
+              />
+            </label>
+            <label class="review__label" for="star-2">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                  fill="#D7D7E2"
+                />
+              </svg>
+              <input
+                class="review__radio"
+                name="star"
+                id="star-2"
+                value="2"
+                type="radio"
+              />
+            </label>
+            <label class="review__label" for="star-1">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                  fill="#D7D7E2"
+                />
+              </svg>
+              <input
+                class="review__radio"
+                name="star"
+                id="star-1"
+                value="1"
+                type="radio"
+              />
+            </label>
+          </div>
+        </div>
+        <h4 class="review__subtitle">Добавить комментарий к книге</h4>
+        <div class="review__comment">
+          <div class="review__contacts">
+            <label class="review__name" for="review-input-name">Имя</label>
+            <input
+              class="review__input input input_sm"
+              type="text"
+              name="review-name"
+              id="review-input-name"
+              placeholder="Александр"
+            />
+            <input
+              class="review__input input input_sm"
+              type="email"
+              name="review-email"
+              id="review-input-email"
+              placeholder="Email"
+            />
+            <button
+              class="review__input input input_sm"
+              type="button"
+              id="choose-book"
+            >
+              <span class="review__book">Выберите книгу</span
+              ><img
+                class="review__icon"
+                src="./assets/images/arr-up.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+          <div class="review__inner">
+            <textarea
+              class="review__text"
+              name="review-text"
+              id="review-text"
+              cols="30"
+              rows="5"
+              placeholder="Ваш отзыв"
+            ></textarea>
+            <ul class="review__options">
+              <li class="review__option">JavaScript ниндзя</li>
+              <li class="review__option">Pragmatic Guide to JavaScript</li>
+              <li class="review__option">Pro JavaScript Techniques</li>
+              <li class="review__option">Выразительный JavaScript</li>
+            </ul>
+          </div>
+          <button class="review__btn btn" type="submit" id="send-review">Отправить</button>
+        </div>
+      </div>
+    </form>
   </body>
 </html>

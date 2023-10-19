@@ -1,6 +1,6 @@
 'use strict';
 
-const navBtn = document.querySelectorAll('.nav__btn');
+const navBtn = document.querySelectorAll('.nav__item.nav__item_btn');
 
 navBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -23,6 +23,20 @@ navBtn.forEach((btn) => {
         .classList.add('nav__sublist_inactive');
       btn.closest('.nav__item').querySelector('.nav__link').style.color =
         '#202326';
+      btn.classList.remove('nav__btn_active');
+    }
+  });
+
+  window.addEventListener('mousedown', (event) => {
+    if (!btn.contains(event.target)) {
+      btn
+        .closest('.nav__item')
+        .querySelector('.nav__sublist')
+        .classList.add('nav__sublist_inactive');
+      btn.closest('.nav__item').querySelector('.nav__link').style.color =
+        '#202326';
+      btn.querySelector('.nav__icon_active').style.display = 'none';
+      btn.querySelector('.nav__icon_inactive').style.display = 'flex';
       btn.classList.remove('nav__btn_active');
     }
   });

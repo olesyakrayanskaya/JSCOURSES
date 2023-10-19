@@ -93,3 +93,39 @@ thumb.addEventListener('pointerdown', function (event) {
 thumb.addEventListener('dragstart', function () {
   return false;
 });
+
+const chooseBook = document.getElementById('choose-book');
+const arrow = document.querySelector('.review__icon');
+const bookList = document.querySelector('.review__options');
+const books = document.querySelectorAll('.review__option');
+const bookName = document.querySelector('.review__book');
+const formReview = document.querySelector('.review');
+
+chooseBook.addEventListener('click', () => {
+  if (!chooseBook.classList.contains('clicked')) {
+    arrow.style.transform = 'rotate(0)';
+    bookList.style.display = 'block';
+    chooseBook.classList.add('clicked');
+  } else {
+    arrow.style.transform = 'rotate(180deg)';
+    bookList.style.display = 'none';
+    chooseBook.classList.remove('clicked');
+  }
+});
+
+books.forEach((book) => {
+  book.addEventListener('click', () => {
+    bookName.innerHTML = book.innerHTML;
+    bookName.style.color = '#202326';
+    arrow.style.transform = 'rotate(180deg)';
+    bookList.style.display = 'none';
+    chooseBook.classList.remove('clicked');
+  });
+});
+
+formReview.addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.reset();
+  bookName.innerHTML = 'Выберите книгу';
+  bookName.style.color = '#777777';
+});
